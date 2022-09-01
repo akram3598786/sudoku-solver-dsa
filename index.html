@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Sudoku Solver</h1>
+
+    <div id="container">
+        <div id="input">
+            <table>
+                <td>
+                    <tr><input minlength="0" maxlength="1" name="" id="00"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="01"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="02"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="03"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="04"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="05"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="06"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="07"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="08"></tr>
+                </td>
+                <td>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="10"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="11"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="12"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="13"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="14"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="15"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="16"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="17"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="18"></tr>
+                </td>
+                <td>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="20"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="21"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="22"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="23"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="24"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="25"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="26"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="27"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="28"></tr>
+                </td>
+                <td>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="30"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="31"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="32"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="33"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="34"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="35"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="36"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="37"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="38"></tr>
+                </td>
+                <td>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="40"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="41"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="42"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="43"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="44"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="45"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="46"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="47"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="48"></tr>
+                </td>
+                <td>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="50"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="51"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="52"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="53"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="54"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="55"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="56"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="57"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="58"></tr>
+                </td>
+                <td>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="60"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="61"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="62"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="63"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="64"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="65"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="66"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="67"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="68"></tr>
+                </td>
+                <td>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="70"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="71"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="72"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="73"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="74"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="75"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="76"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="77"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="78"></tr>
+                </td>
+                <td>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="80"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="81"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="82"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="83"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="84"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="85"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="86"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="87"></tr>
+                    <tr><input type="text" minlength="0" maxlength="1"  name="" id="88"></tr>
+                </td>
+            </table>
+        </div>
+        <div id="buttons">
+            <button id = "solveBtn" onclick="getData()">Solve Sudoku</button>
+        </div>
+    </div>
+    <footer>
+        <h3>
+            Made with <i class="fa fa-heart" style="font-size:20px;color:brown" > </i> by Akram
+        </h3>
+
+    </footer>
+</body>
+<script src="./index.js"></script>
+</html>

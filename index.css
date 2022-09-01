@@ -1,0 +1,105 @@
+body{
+    background-color: black;
+    color: white;
+}
+#container{
+    margin: auto;
+    height: auto;
+    column-gap: 50px;
+    justify-content: space-around;
+    padding: 0px;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 50px;
+    color: brown;
+}
+
+#container #input{
+    width: 30%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    height: 380px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: brown;
+    border-radius: 15px;
+}
+
+#output{
+    display: none;
+}
+
+textarea{
+    font-size: 20px;
+}
+
+input{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+button{
+    padding: 3px 20px 3px 20px;
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+input:hover{
+    background-color: rgb(195, 230, 253);
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+footer{
+    /* position: absolute; */
+    margin-top: 40px;
+    
+}
+footer h3{
+    text-align: center;
+}
+@media only screen and (max-width: 800px){
+    input{
+        width: 17px;
+        height: 17px;
+        font-size: 11px;
+        margin-top: 5px;
+        margin-left: 5px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    #container #input{
+        width: 77%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(9,1fr);
+        height: 250px;
+        padding: 30px;
+        text-align: center;
+        border: 1px solid black;
+        background-color: brown;
+        border-radius: 15px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+}
