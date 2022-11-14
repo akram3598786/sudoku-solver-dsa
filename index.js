@@ -22,19 +22,12 @@ function getData() {
                 return false;
             }
 
-            let count = 0;
-            if (document.getElementById(id).value == "") {
-                arr[r][c] = ".";
-            } else {
-                arr[r][c] = document.getElementById(id).value;
-                count++;
-            }
+            if (document.getElementById(id).value == "")  arr[r][c] = ".";  
+            else arr[r][c] = document.getElementById(id).value;   
         }
     }
 
     document.getElementById("solveBtn").style.display = "none";
-
-    console.log(arr);
 
     if(isValidBoad(arr)){
         solveSudoku(arr);
@@ -42,8 +35,6 @@ function getData() {
         alert("Sudoku Is Not Valid");
         clearData();
     }
-
-
     showData();
 }
 
@@ -101,13 +92,11 @@ const isValidSudoku = (row, col, board, char) => {
 };
 
 function showData(){
+
     for (let r = 0; r < 9; r++) {
         for (let c = 0; c < 9; c++) {
             let id = String(r) + String(c);
-
-            
                 document.getElementById(id).value = arr[r][c];
-            
         }
     }
 
@@ -155,5 +144,5 @@ let isValidBoad = function(board) {
         } 
       }
     }
-    return true
+    return true;
   };
